@@ -1,11 +1,15 @@
 # Dino-AI
 
-A dinosaur game (like the Google Chrome Dino game) built with Python and Pygame. The player controls a dinosaur that can run and jump to avoid incoming obstacles. The game speed increases as the score rises.
+**Dino-AI** is a Python game inspired by the classic Chrome Dino game, featuring both a single-player mode and an AI mode. The AI mode uses the `NEAT` (NeuroEvolution of Augmenting Topologies) algorithm to evolve a neural network capable of playing the game autonomously. The game uses the `Pygame` library for graphics and sound.
 
 ## Features
 
-- **Single Player Mode**: Manual mode is currently the only playable mode. Players control the dinosaur’s jump to avoid obstacles.
-- **Increasing Difficulty**: The game speed gradually increases as the score goes up, adding complexity to the gameplay.
+- **Single Player Mode**: Manual mode where Player control the dinosaur’s jump to avoid obstacles.
+- **AI Mode:** Autonomous gameplay with a neural network powered by NEAT, allowing the AI to evolve over generations to improve its performance.
+- **Dynamic Gameplay Elements:**
+  - Day and night cycle for visual variation.
+  - The game speed gradually increases as the score goes up, adding complexity to the gameplay.
+- **Scoring System:** Tracks current score and maximum score in single-player mode and supports fitness scoring for AI training.
 
 ## Requirements
 
@@ -31,7 +35,10 @@ A dinosaur game (like the Google Chrome Dino game) built with Python and Pygame.
 
 ```plaintext
    Dino-AI/
+   ├── main.py
+   ├── config-feedforward.txt
    ├── icon.ico
+   ├── requirements.txt
    ├── sprites/
        ├── dino/
            ├── dino_run1.png
@@ -58,13 +65,12 @@ A dinosaur game (like the Google Chrome Dino game) built with Python and Pygame.
    ```
 
 2. In the main menu, press:
-    - 2 to start Single Player Mode
+    - `1` to start the AI Mode. `NEAT` will simulate multiple generations of Dinos, with the best-performing neural networks selected to continue learning and improving.
+    - `2` to start Single Player Mode. Use the `spacebar` to make the dinosaur jump and avoid obstacles.
 
-3. Use the spacebar to make the dinosaur jump and avoid obstacles.
+## Configuration
 
-## Future Improvements
-
-- **AI Mode**: Placeholder for an AI mode to be implemented in the future.
+To adjust the AI’s behavior, you can modify parameters in `config-feedforward.txt` as needed. This file contains settings for mutation rates, population size, and other NEAT-specific options. Also some configurations are contained in the `main.py` file.
 
 ## Contributing
 
