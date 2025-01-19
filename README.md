@@ -2,6 +2,19 @@
 
 **Dino-AI** is a Python game inspired by the classic Chrome Dino game, featuring both a single-player mode and an AI mode. The AI mode uses the `NEAT` (NeuroEvolution of Augmenting Topologies) algorithm to evolve a neural network capable of playing the game autonomously. The game uses the `Pygame` library for graphics and sound.
 
+## Idea
+- The original idea: [Youtube](https://youtu.be/sB_IGstiWlc?si=lsPCqMg0U49Nqjmp)
+- The NEAT guide: [Youtube](https://youtu.be/GKmD26lH51U?si=tWrYhmbjy535e1l0)
+  - Used the video only for the NEAT setting and usage.
+  - I made:
+    - Most part of the AI mode
+    - Creted Single-Player mode
+    - Created Menu
+    - Created DayNightCycle
+    - Created Name tags for every Dino
+    - Created GameOver screen (for SinglePlayer)
+    - Added sounds
+
 ## Features
 
 - **Single Player Mode**: Manual mode where Player control the dinosaur’s jump to avoid obstacles.
